@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>No 4 | hal 35</title>
+		<style>
+			html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+			body {background-color: #f8f8f8; font-size:13px; margin:0 auto; width:900px;}
+			label {margin-width:200px; vertical-align:top; float:left; min-width:200px;}
+			p {clear:both; margin:5px; border-bottom:solid 1px #DBDBDB; padding:10px 0px;}
+			input[type="text"], textarea {min-width:250px;}
+
+			h1, h2, h3 {text-align:center;}
+		</style>
+	</head>	
+<body>
+	<h1>Registrasi Penerimaan Siswa Baru</h1>
+	<form method="post" action="no4.php">
+	<fieldset legend="register">
+	<p>
+		<label>Nama Siswa</label>
+		<input type="text" name="nama" required placeholder="Masukkan Nama" />
+	</p>
+	<p>
+		<label>Tempat Lahir</label>
+		<input type="text" name="tempat" required value="Sukabumi" />
+	</p>
+	<p>
+		<label>Tanggal Lahir</label>
+		<input type="date" name="tgl" required />
+		
+	</p>
+	<p>
+		<label>Nilai UAN</label>
+		<input type="text"  name="nilai" min="5" max="10" required />
+	</p>
+	<p>
+		<label>Alamat</label>
+		<textarea cols="20" rows="5" minlength="10" maxlength="30" name="alamat"> </textarea>
+	</p>
+	<p>
+		<label>Asal Sekolah Siswa</label>
+		<input type="text" name="asal" required/>
+	</p>
+	<p>
+		<label>Jenis Kelamin</label>
+		<input type="radio" name="jk" value="Laki-laki" />Laki-laki
+		<input type="radio" name="jk" value="Perempuan" />Perempuan
+		<input type="radio" name="jk" value="Lainnya" />Lainnya
+	</p>
+
+	<p>
+		<button type="submit">Registrasi</button>
+		<button type="reset">Reset</button>
+
+	</p>
+	</fieldset>
+	</form>
+</body>
+</html>
